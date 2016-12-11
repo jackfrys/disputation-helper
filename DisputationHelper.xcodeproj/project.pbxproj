@@ -14,6 +14,7 @@
 		701543271DF0240200F097F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701543251DF0240200F097F3 /* LaunchScreen.storyboard */; };
 		701543321DF0240200F097F3 /* DisputationHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701543311DF0240200F097F3 /* DisputationHelperTests.swift */; };
 		7015433D1DF0240200F097F3 /* DisputationHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */; };
+		70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDBE1DFD03B00062F101 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		701543381DF0240200F097F3 /* DisputationHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisputationHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisputationHelperUITests.swift; sourceTree = "<group>"; };
 		7015433E1DF0240200F097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D5FDBE1DFD03B00062F101 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7015431B1DF0240200F097F3 /* DisputationHelper */ = {
 			isa = PBXGroup;
 			children = (
+				70D5FDC01DFD03B90062F101 /* Model */,
 				7015431C1DF0240200F097F3 /* AppDelegate.swift */,
 				7015431E1DF0240200F097F3 /* ViewController.swift */,
 				701543201DF0240200F097F3 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				7015433E1DF0240200F097F3 /* Info.plist */,
 			);
 			path = DisputationHelperUITests;
+			sourceTree = "<group>";
+		};
+		70D5FDC01DFD03B90062F101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70D5FDBE1DFD03B00062F101 /* Question.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */,
 				7015431F1DF0240200F097F3 /* ViewController.swift in Sources */,
 				7015431D1DF0240200F097F3 /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +526,7 @@
 				701543431DF0240200F097F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701543441DF0240200F097F3 /* Build configuration list for PBXNativeTarget "DisputationHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				701543461DF0240200F097F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701543471DF0240200F097F3 /* Build configuration list for PBXNativeTarget "DisputationHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				701543491DF0240200F097F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
