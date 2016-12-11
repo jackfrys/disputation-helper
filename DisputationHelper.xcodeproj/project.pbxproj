@@ -17,6 +17,7 @@
 		70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDBE1DFD03B00062F101 /* Question.swift */; };
 		70D5FDC21DFD0B6D0062F101 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC11DFD0B6D0062F101 /* Answers.swift */; };
 		70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC31DFD11670062F101 /* Contradictions.swift */; };
+		70D5FDC61DFD26FC0062F101 /* Disputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC51DFD26FC0062F101 /* Disputation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		70D5FDBE1DFD03B00062F101 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
 		70D5FDC11DFD0B6D0062F101 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		70D5FDC31DFD11670062F101 /* Contradictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contradictions.swift; sourceTree = "<group>"; };
+		70D5FDC51DFD26FC0062F101 /* Disputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disputation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				70D5FDBE1DFD03B00062F101 /* Question.swift */,
+				70D5FDC51DFD26FC0062F101 /* Disputation.swift */,
 				70D5FDC11DFD0B6D0062F101 /* Answers.swift */,
 				70D5FDC31DFD11670062F101 /* Contradictions.swift */,
 			);
@@ -281,6 +284,7 @@
 			files = (
 				70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */,
 				7015431F1DF0240200F097F3 /* ViewController.swift in Sources */,
+				70D5FDC61DFD26FC0062F101 /* Disputation.swift in Sources */,
 				70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */,
 				7015431D1DF0240200F097F3 /* AppDelegate.swift in Sources */,
 				70D5FDC21DFD0B6D0062F101 /* Answers.swift in Sources */,

@@ -9,7 +9,7 @@
 import Foundation
 
 class Answers {
-    private var answers = [Answer]()
+    var answers = [Answer]()
     
     func addAnswer(answer: Answer) {
         answers.append(answer)
