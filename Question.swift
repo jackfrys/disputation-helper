@@ -22,6 +22,10 @@ class Question {
         self.trueAdoxReason = trueAdoxReason
         self.falseAdoxReason = falseAdoxReason
     }
+    
+    func answer(answer: Bool) -> Answer {
+        return Answer(question: self, answer: answer)
+    }
 }
 
 class Answer {
@@ -35,5 +39,9 @@ class Answer {
     
     func adoxScore() -> Int {
         return answer ? question.trueAdoxScore : question.falseAdoxScore
+    }
+    
+    func same(answer: Answer) -> Bool {
+        return self.question === answer.question && self.answer == answer.answer
     }
 }

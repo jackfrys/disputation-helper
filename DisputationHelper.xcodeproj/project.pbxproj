@@ -16,6 +16,7 @@
 		7015433D1DF0240200F097F3 /* DisputationHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */; };
 		70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDBE1DFD03B00062F101 /* Question.swift */; };
 		70D5FDC21DFD0B6D0062F101 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC11DFD0B6D0062F101 /* Answers.swift */; };
+		70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC31DFD11670062F101 /* Contradictions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7015433E1DF0240200F097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70D5FDBE1DFD03B00062F101 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
 		70D5FDC11DFD0B6D0062F101 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
+		70D5FDC31DFD11670062F101 /* Contradictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contradictions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				70D5FDBE1DFD03B00062F101 /* Question.swift */,
 				70D5FDC11DFD0B6D0062F101 /* Answers.swift */,
+				70D5FDC31DFD11670062F101 /* Contradictions.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */,
 				7015431F1DF0240200F097F3 /* ViewController.swift in Sources */,
+				70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */,
 				7015431D1DF0240200F097F3 /* AppDelegate.swift in Sources */,
 				70D5FDC21DFD0B6D0062F101 /* Answers.swift in Sources */,
 			);
