@@ -12,7 +12,6 @@
 		701543221DF0240200F097F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701543201DF0240200F097F3 /* Main.storyboard */; };
 		701543241DF0240200F097F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701543231DF0240200F097F3 /* Assets.xcassets */; };
 		701543271DF0240200F097F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701543251DF0240200F097F3 /* LaunchScreen.storyboard */; };
-		701543321DF0240200F097F3 /* DisputationHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701543311DF0240200F097F3 /* DisputationHelperTests.swift */; };
 		7015433D1DF0240200F097F3 /* DisputationHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */; };
 		70D5FDBF1DFD03B00062F101 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDBE1DFD03B00062F101 /* Question.swift */; };
 		70D5FDC21DFD0B6D0062F101 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC11DFD0B6D0062F101 /* Answers.swift */; };
@@ -48,7 +47,6 @@
 		701543261DF0240200F097F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		701543281DF0240200F097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7015432D1DF0240200F097F3 /* DisputationHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisputationHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		701543311DF0240200F097F3 /* DisputationHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisputationHelperTests.swift; sourceTree = "<group>"; };
 		701543331DF0240200F097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701543381DF0240200F097F3 /* DisputationHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisputationHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisputationHelperUITests.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 		701543301DF0240200F097F3 /* DisputationHelperTests */ = {
 			isa = PBXGroup;
 			children = (
-				701543311DF0240200F097F3 /* DisputationHelperTests.swift */,
 				70D5FDC71DFD2EDB0062F101 /* QuestionTests.swift */,
 				701543331DF0240200F097F3 /* Info.plist */,
 			);
@@ -300,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D5FDC91DFD2F3E0062F101 /* Question.swift in Sources */,
-				701543321DF0240200F097F3 /* DisputationHelperTests.swift in Sources */,
 				70D5FDC81DFD2EDB0062F101 /* QuestionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
