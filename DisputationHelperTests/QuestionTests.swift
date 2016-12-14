@@ -16,11 +16,11 @@ class QuestionTests: XCTestCase {
         let t = question.answer(answer: true)
         XCTAssertEqual(1, t.adoxScore())
         XCTAssertEqual("true", t.adoxReason())
-        XCTAssertTrue(Answer(question: question, answer: true).same(answer: t))
+        XCTAssertTrue(Answer(question: question, answer: true) == t)
         
         let f = question.answer(answer: false)
         XCTAssertEqual(9, f.adoxScore())
         XCTAssertEqual("false", f.adoxReason())
-        XCTAssertTrue(Answer(question: question, answer: false).same(answer: f))
+        XCTAssertTrue(Answer(question: question, answer: false) == f)
     }
 }

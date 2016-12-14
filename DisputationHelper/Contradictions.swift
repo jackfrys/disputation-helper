@@ -35,7 +35,7 @@ class Contradiction {
     func violated(answers: [Answer]) -> Bool {
         var one = false
         for answer in answers {
-            if answer.same(answer: first) {
+            if answer == first {
                 one = true
                 break
             }
@@ -43,7 +43,7 @@ class Contradiction {
         
         var two = false
         for answer in answers {
-            if answer.same(answer: second) {
+            if answer == second {
                 two = true
                 break
             }

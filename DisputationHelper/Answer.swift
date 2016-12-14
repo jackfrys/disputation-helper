@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Answer {
+class Answer : Equatable {
     private let question : Question
     private let answer : Bool
     
@@ -25,7 +25,7 @@ class Answer {
         return answer ? question.trueAdoxReason : question.falseAdoxReason
     }
     
-    func same(answer: Answer) -> Bool {
-        return self.question === answer.question && self.answer == answer.answer
+    static func ==(lhs: Answer, rhs: Answer) -> Bool {
+        return lhs.question === rhs.question && lhs.answer == rhs.answer
     }
 }
