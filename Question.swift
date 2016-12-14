@@ -41,6 +41,10 @@ class Answer {
         return answer ? question.trueAdoxScore : question.falseAdoxScore
     }
     
+    func adoxReason() -> String {
+        return answer ? question.trueAdoxReason : question.falseAdoxReason
+    }
+    
     func same(answer: Answer) -> Bool {
         return self.question === answer.question && self.answer == answer.answer
     }

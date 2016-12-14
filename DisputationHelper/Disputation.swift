@@ -17,8 +17,8 @@ class Disputation {
         questions.append(question)
     }
     
-    func nextQuestion() -> Question {
-        return questions.popLast()!
+    func nextQuestion() -> Question? {
+        return questions.popLast()
     }
     
     func submitAnswer(question: Question, answer: Bool) {
@@ -33,5 +33,14 @@ class Disputation {
         }
         
         return nil
+    }
+    
+    func topAdox(number: Int) -> [Answer] {
+        let adox = answers.sortedAdox()
+        var r = [Answer]()
+        for i in 0..<number {
+            r.append(adox[i])
+        }
+        return r
     }
 }
