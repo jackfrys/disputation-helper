@@ -54,7 +54,7 @@
 		7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisputationHelperUITests.swift; sourceTree = "<group>"; };
 		7015433E1DF0240200F097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		709909831E012AE7000D04F6 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		70D5FDBE1DFD03B00062F101 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
+		70D5FDBE1DFD03B00062F101 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		70D5FDC11DFD0B6D0062F101 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		70D5FDC31DFD11670062F101 /* Contradictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contradictions.swift; sourceTree = "<group>"; };
 		70D5FDC51DFD26FC0062F101 /* Disputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disputation.swift; sourceTree = "<group>"; };
