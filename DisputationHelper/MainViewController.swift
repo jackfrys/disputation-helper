@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  DisputationHelper
 //
 //  Created by Jack Frysinger on 12/1/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
