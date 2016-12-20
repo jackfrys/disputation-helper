@@ -41,6 +41,10 @@ class Disputation {
         return nil
     }
     
+    func strike(answer: Answer) {
+        answers.strike(answer: answer)
+    }
+    
     func topAdox(number: Int) -> [Answer] {
         let adox = answers.sortedAdox()
         var r = [Answer]()

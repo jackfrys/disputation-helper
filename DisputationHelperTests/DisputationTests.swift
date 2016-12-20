@@ -51,6 +51,9 @@ class DisputationTests: XCTestCase {
         XCTAssertEqual(4, count)
         XCTAssertEqual(3, d.topAdox(number: 3).count)
         XCTAssertEqual([q1.answer(answer: true), q3.answer(answer: true), q2.answer(answer: false)], d.topAdox(number: 3))
+        d.strike(answer: q2.answer(answer: false))
+        XCTAssertNil(d.contradiction())
+        XCTAssertEqual([q1.answer(answer: true), q3.answer(answer: true), q4.answer(answer: true)], d.topAdox(number: 3))
     }
     
 }
