@@ -57,4 +57,18 @@ class AnswersTests: XCTestCase {
         
         XCTAssertEqual([a1, a4, a3, a2], answers.sortedAdox())
     }
+    
+    func testAllFalse() {
+        let answers = Answers()
+        let a1 = q1.answer(answer: false)
+        let a2 = q2.answer(answer: false)
+        let a3 = q3.answer(answer: false)
+        let a4 = q4.answer(answer: false)
+        answers.addAnswer(answer: a1)
+        answers.addAnswer(answer: a3)
+        answers.addAnswer(answer: a2)
+        answers.addAnswer(answer: a4)
+        
+        XCTAssertEqual([a3, a4, a2, a1], answers.sortedAdox())
+    }
 }
