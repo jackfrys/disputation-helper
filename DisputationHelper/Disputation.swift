@@ -17,6 +17,10 @@ class Disputation {
         questions.append(question)
     }
     
+    func addContradiction(contradiction: Contradiction) {
+        contradictions.add(contradiction: contradiction)
+    }
+    
     func nextQuestion() -> Question? {
         return questions.popLast()
     }
