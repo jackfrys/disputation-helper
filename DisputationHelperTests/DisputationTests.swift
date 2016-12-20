@@ -34,11 +34,11 @@ class DisputationTests: XCTestCase {
             if dq1.text == "q1" {
                 one = true
                 d.submitAnswer(question: dq1, answer: true)
-            }
-            
-            if dq1.text == "q2" {
+            } else if dq1.text == "q2" {
                 two = true
                 d.submitAnswer(question: dq1, answer: false)
+            } else {
+                d.submitAnswer(question: dq1, answer: true)
             }
             
             if one && two {
