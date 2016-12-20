@@ -33,22 +33,6 @@ class Contradiction {
     }
     
     func violated(answers: [Answer]) -> Bool {
-        var one = false
-        for answer in answers {
-            if answer == first {
-                one = true
-                break
-            }
-        }
-        
-        var two = false
-        for answer in answers {
-            if answer == second {
-                two = true
-                break
-            }
-        }
-        
-        return one && two
+        return answers.contains(first) && answers.contains(second)
     }
 }
