@@ -15,11 +15,19 @@ class ContradictionsTests: XCTestCase {
     let q3 = Question(text: "q3", trueAdoxScore: 4, falseAdoxScore: 6, trueAdoxReason: "t", falseAdoxReason: "f")
     let q4 = Question(text: "q4", trueAdoxScore: 1, falseAdoxScore: 5, trueAdoxReason: "t", falseAdoxReason: "f")
     
-    func testContradiction() {
+    func testViolated() {
         let c1 = Contradiction(firstQuestion: q1, firstAnswer: true, secondQuestion: q2, secondAnswer: false, reason: "reason")
         XCTAssertTrue(c1.violated(answers: [q1.answer(answer: true), q2.answer(answer: false)]))
         XCTAssertFalse(c1.violated(answers: [q1.answer(answer: false), q2.answer(answer: false)]))
         XCTAssertFalse(c1.violated(answers: [q1.answer(answer: true), q2.answer(answer: true)]))
         XCTAssertFalse(c1.violated(answers: [q1.answer(answer: false), q2.answer(answer: true)]))
+    }
+    
+    func testContains() {
+        let c1 = Contradiction(firstQuestion: q1, firstAnswer: true, secondQuestion: q2, secondAnswer: false, reason: "reason")
+        XCTAssertTrue(c1.contains(answer: q1.answer(answer: true)))
+        XCTAssertTrue(c1.contains(answer: q2.answer(answer: false)))
+        XCTAssertFalse(c1.contains(answer: q1.answer(answer: false)))
+        XCTAssertFalse(c1.contains(answer: q2.answer(answer: true)))
     }
 }
