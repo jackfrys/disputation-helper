@@ -18,5 +18,8 @@ class ContradictionsTests: XCTestCase {
     func testContradiction() {
         let c1 = Contradiction(firstQuestion: q1, firstAnswer: true, secondQuestion: q2, secondAnswer: false, reason: "reason")
         XCTAssertTrue(c1.violated(answers: [q1.answer(answer: true), q2.answer(answer: false)]))
+        XCTAssertFalse(c1.violated(answers: [q1.answer(answer: false), q2.answer(answer: false)]))
+        XCTAssertFalse(c1.violated(answers: [q1.answer(answer: true), q2.answer(answer: true)]))
+        XCTAssertFalse(c1.violated(answers: [q1.answer(answer: false), q2.answer(answer: true)]))
     }
 }
