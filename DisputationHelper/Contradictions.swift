@@ -35,4 +35,8 @@ class Contradiction {
     func violated(answers: [Answer]) -> Bool {
         return answers.contains(first) && answers.contains(second)
     }
+    
+    func contains(answer: Answer) -> Bool {
+        return first == answer || second == answer
+    }
 }

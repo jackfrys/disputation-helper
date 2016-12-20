@@ -26,10 +26,12 @@ class Disputation {
     }
     
     func contradiction() -> Contradiction? {
-        let c = contradictions.violated(answers: answers.answers)
-        
-        if c.count > 0 {
-            return c[0]
+        if let l = answers.answers.last {
+            let c = contradictions.violated(answers: answers.answers).filter {$0.contains(answer: l)}
+            
+            if c.count > 0 {
+                return c[0]
+            }
         }
         
         return nil
