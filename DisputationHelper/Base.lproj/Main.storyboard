@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="107.49625187406298"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Disputation View Controller-->
         <scene sceneID="bI8-De-PDy">
             <objects>
-                <viewController id="j2B-lu-xS9" sceneMemberID="viewController">
+                <viewController id="j2B-lu-xS9" customClass="EditDisputationViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lvx-lp-oEv"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2p-Lt-RlX"/>
@@ -69,9 +69,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="Uyv-qm-POT">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="5Lb-x9-fWX"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="02n-up-cIY"/>
+                                    <navigationItem title="Add Disputation" id="Uyv-qm-POT">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="5Lb-x9-fWX">
+                                            <connections>
+                                                <action selector="backButton:" destination="j2B-lu-xS9" id="mnX-rN-XhQ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -109,6 +112,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="defendant" destination="JZi-IK-ftd" id="xDJ-ia-C6U"/>
+                        <outlet property="navBar" destination="Qne-8c-INB" id="fOs-Tq-fYv"/>
+                        <outlet property="opponent" destination="sTC-4z-OnW" id="kPn-qS-I7P"/>
+                        <outlet property="thesis" destination="1AI-ui-QIV" id="d1U-mI-XZD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3P-gI-5fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,7 +337,7 @@
                                 <rect key="frame" x="16" y="269" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

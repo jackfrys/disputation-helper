@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700B82911E0A2BB000F0E8C7 /* EditDisputationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B82901E0A2BB000F0E8C7 /* EditDisputationViewController.swift */; };
 		7015431D1DF0240200F097F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015431C1DF0240200F097F3 /* AppDelegate.swift */; };
 		7015431F1DF0240200F097F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015431E1DF0240200F097F3 /* MainViewController.swift */; };
 		701543221DF0240200F097F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701543201DF0240200F097F3 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700B82901E0A2BB000F0E8C7 /* EditDisputationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDisputationViewController.swift; sourceTree = "<group>"; };
 		701543191DF0240200F097F3 /* DisputationHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisputationHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015431C1DF0240200F097F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7015431E1DF0240200F097F3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				7015431C1DF0240200F097F3 /* AppDelegate.swift */,
 				7015431E1DF0240200F097F3 /* MainViewController.swift */,
 				701543201DF0240200F097F3 /* Main.storyboard */,
+				700B82901E0A2BB000F0E8C7 /* EditDisputationViewController.swift */,
 				701543231DF0240200F097F3 /* Assets.xcassets */,
 				701543251DF0240200F097F3 /* LaunchScreen.storyboard */,
 				701543281DF0240200F097F3 /* Info.plist */,
@@ -306,6 +309,7 @@
 				70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */,
 				7015431D1DF0240200F097F3 /* AppDelegate.swift in Sources */,
 				70D5FDC21DFD0B6D0062F101 /* Answers.swift in Sources */,
+				700B82911E0A2BB000F0E8C7 /* EditDisputationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,10 @@ class Disputation {
     private let answers = Answers()
     private let contradictions = Contradictions()
     
+    var defendant: String?
+    var opponent: String?
+    var thesis: String?
+    
     func addQuestion(question: Question) {
         questions.append(question)
     }
