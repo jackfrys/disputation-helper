@@ -20,15 +20,19 @@ class EditDisputationViewController : UIViewController {
     
     var disputation: Disputation!
     
-    var edit: Bool = false {
-        didSet {
-            navBar.items?[0].title = edit ? "Edit Disputation" : "Add Disputation"
-        }
-    }
+    var edit: Bool = false
     
     @IBAction func backButton(_ sender: Any) {
         disputation.defendant = defendant.text
         disputation.opponent = opponent.text
-        view.removeFromSuperview()
+        disputation.thesis = thesis.text
+        dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navBar.items?[0].title = edit ? "Edit Disputation" : "Add Disputation"
+        thesis.text = disputation.thesis
+        opponent.text = disputation.opponent
+        defendant.text = disputation.defendant
     }
 }

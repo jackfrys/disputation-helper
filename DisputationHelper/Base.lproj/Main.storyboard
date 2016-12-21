@@ -26,7 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Disputation Manager" id="EDP-f1-wts">
-                                        <barButtonItem key="rightBarButtonItem" title="Add" id="4gz-Bj-WCk"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Add" id="4gz-Bj-WCk">
+                                            <connections>
+                                                <segue destination="j2B-lu-xS9" kind="presentation" id="V2u-cJ-PB7"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -48,6 +52,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="PJU-KQ-uv3" id="ltM-dj-rJ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +63,7 @@
         <!--Edit Disputation View Controller-->
         <scene sceneID="bI8-De-PDy">
             <objects>
-                <viewController id="j2B-lu-xS9" customClass="EditDisputationViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditDisputationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j2B-lu-xS9" customClass="EditDisputationViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lvx-lp-oEv"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2p-Lt-RlX"/>
