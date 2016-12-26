@@ -13,15 +13,14 @@ class EditContradictionViewController: UIViewController {
     @IBOutlet var questionTwoLabel: UILabel!
     @IBOutlet var questionOneLabel: UILabel!
     
-    @IBOutlet var questionTwoState: UISegmentedControl!
-    @IBOutlet var questionOneState: UISegmentedControl!
-    
     @IBOutlet var reasonText: UITextView!
     
     var contradiction: Contradiction?
     var disputation: Disputation!
     var edit = false
     
+    @IBOutlet var questionTwoState: UISwitch!
+    @IBOutlet var questionOneState: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
         _ = cont()
@@ -34,6 +33,9 @@ class EditContradictionViewController: UIViewController {
     }
 
     @IBAction func backButton(_ sender: Any) {
+        contradiction?.first.answer = questionOneState.isOn
+        contradiction?.second.answer = questionTwoState.isOn
+        contradiction?.reason = reasonText.text
         if !edit {
             disputation.addContradiction(contradiction: contradiction!)
         }
@@ -65,8 +67,18 @@ class EditContradictionViewController: UIViewController {
         let editView = storyboard.instantiateViewController(withIdentifier: "SelectQuestionViewController") as! SelectQuestionViewController
         editView.contradiction = contradiction
         editView.disputation = disputation
-        editView.answer = questionOneState.state.rawValue == 0
+        editView.answer = questionOneState.isOn
         editView.first = false
         present(editView, animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        questionOneLabel.text = contradiction?.first.question.text
+        questionOneState.isOn = (contradiction?.first.answer)!
+        
+        questionTwoLabel.text = contradiction?.second.question.text
+        questionTwoState.isOn = (contradiction?.second.answer)!
+        
+        reasonText.text = contradiction?.reason
     }
 }

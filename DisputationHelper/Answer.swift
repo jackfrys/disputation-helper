@@ -9,8 +9,8 @@
 import Foundation
 
 class Answer : Equatable {
-    private let question : Question
-    private let answer : Bool
+    let question : Question
+    var answer : Bool
     
     init(question: Question, answer: Bool) {
         self.question = question

@@ -372,14 +372,6 @@
                                     <action selector="setQuestionOne:" destination="4x3-Fn-kuy" eventType="touchUpInside" id="fXa-pm-QyR"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-mF-dCZ">
-                                <rect key="frame" x="16" y="103" width="93" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="True"/>
-                                    <segment title="False"/>
-                                </segments>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-9N-8fl">
                                 <rect key="frame" x="16" y="162" width="282" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -395,14 +387,6 @@
                                     <action selector="setQuestionTwo:" destination="4x3-Fn-kuy" eventType="touchUpInside" id="EVg-99-HfW"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-80-w3q">
-                                <rect key="frame" x="16" y="192" width="93" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="True"/>
-                                    <segment title="False"/>
-                                </segments>
-                            </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8OQ-Dj-djZ">
                                 <rect key="frame" x="16" y="269" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -411,14 +395,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C11-VI-vKJ">
+                                <rect key="frame" x="16" y="103" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZXH-ZH-T5c">
+                                <rect key="frame" x="16" y="191" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="questionOneLabel" destination="9Nc-V0-9oV" id="jpu-aa-Ir9"/>
-                        <outlet property="questionOneState" destination="lXi-mF-dCZ" id="ZHq-6A-1eX"/>
+                        <outlet property="questionOneState" destination="C11-VI-vKJ" id="occ-6I-Wka"/>
                         <outlet property="questionTwoLabel" destination="3Ud-9N-8fl" id="Fym-sl-Wa0"/>
-                        <outlet property="questionTwoState" destination="6k4-80-w3q" id="IWD-bs-bgQ"/>
+                        <outlet property="questionTwoState" destination="ZXH-ZH-T5c" id="MTq-Tw-Vnc"/>
                         <outlet property="reasonText" destination="8OQ-Dj-djZ" id="mvs-xH-uE9"/>
                     </connections>
                 </viewController>

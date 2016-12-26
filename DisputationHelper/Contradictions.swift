@@ -34,7 +34,7 @@ class Contradiction {
     var first : Answer
     var second : Answer
     
-    private let reason : String
+    var reason : String
     
     init(firstQuestion: Question, firstAnswer: Bool, secondQuestion: Question, secondAnswer: Bool, reason: String) {
         self.first = firstQuestion.answer(answer: firstAnswer)
