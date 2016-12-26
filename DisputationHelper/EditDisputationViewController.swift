@@ -41,7 +41,8 @@ class EditDisputationViewController : UIViewController {
         if let v = vc as? QuestionViewController {
             v.disputation = disputation
         } else {
-            assert(false) // not implemented
+            let v = vc as! ContradictionsViewController
+            v.disputation = disputation
         }
     }
 }

@@ -18,11 +18,21 @@ class Contradictions {
     func violated(answers: [Answer]) -> [Contradiction] {
         return contradictions.filter {$0.violated(answers: answers)}
     }
+    
+    func index(index: Int) -> Contradiction {
+        return contradictions[index]
+    }
+    
+    var count: Int {
+        get {
+            return contradictions.count
+        }
+    }
 }
 
 class Contradiction {
-    private let first : Answer
-    private let second : Answer
+    var first : Answer
+    var second : Answer
     
     private let reason : String
     

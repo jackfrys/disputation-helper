@@ -62,9 +62,19 @@ class Disputation {
         return questions[index]
     }
     
+    func contradiction(index: Int) -> Contradiction {
+        return contradictions.index(index: index)
+    }
+    
     var questionCount: Int {
         get {
             return questions.count
+        }
+    }
+    
+    var contradictionCount: Int {
+        get {
+            return contradictions.count
         }
     }
 }

@@ -240,6 +240,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="contradictionTable" destination="bUg-cl-jGB" id="0LS-Hq-3Xd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSx-QC-DRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,7 +335,7 @@
         <!--Edit Contradiction View Controller-->
         <scene sceneID="JH2-ln-ABJ">
             <objects>
-                <viewController id="4x3-Fn-kuy" customClass="EditContradictionViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditContradictionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4x3-Fn-kuy" customClass="EditContradictionViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zWg-43-f2W"/>
                         <viewControllerLayoutGuide type="bottom" id="P2U-rc-2gM"/>
@@ -365,6 +368,9 @@
                                 <rect key="frame" x="306" y="69" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="setQuestionOne:" destination="4x3-Fn-kuy" eventType="touchUpInside" id="fXa-pm-QyR"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-mF-dCZ">
                                 <rect key="frame" x="16" y="103" width="93" height="29"/>
@@ -385,6 +391,9 @@
                                 <rect key="frame" x="306" y="157" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="setQuestionTwo:" destination="4x3-Fn-kuy" eventType="touchUpInside" id="EVg-99-HfW"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-80-w3q">
                                 <rect key="frame" x="16" y="192" width="93" height="29"/>
@@ -405,15 +414,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionOneLabel" destination="9Nc-V0-9oV" id="jpu-aa-Ir9"/>
+                        <outlet property="questionOneState" destination="lXi-mF-dCZ" id="ZHq-6A-1eX"/>
+                        <outlet property="questionTwoLabel" destination="3Ud-9N-8fl" id="Fym-sl-Wa0"/>
+                        <outlet property="questionTwoState" destination="6k4-80-w3q" id="IWD-bs-bgQ"/>
+                        <outlet property="reasonText" destination="8OQ-Dj-djZ" id="mvs-xH-uE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmm-sz-1tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2224.8000000000002" y="378.26086956521743"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Question View Controller-->
         <scene sceneID="NLe-dc-WAK">
             <objects>
-                <viewController id="9Cf-8U-rhu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectQuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Cf-8U-rhu" customClass="SelectQuestionViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xsn-Ua-a3P"/>
                         <viewControllerLayoutGuide type="bottom" id="qtf-et-fjC"/>
@@ -427,7 +443,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Select Question" id="dBW-cc-Msl">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RLh-si-AgI"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RLh-si-AgI">
+                                            <connections>
+                                                <action selector="backButton:" destination="9Cf-8U-rhu" id="oNK-0g-L92"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -449,6 +469,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionTable" destination="Xtd-Kf-5Ge" id="MsD-1t-v2c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mai-4G-EOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
