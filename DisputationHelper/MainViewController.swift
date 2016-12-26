@@ -41,7 +41,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let editView = storyboard.instantiateViewController(withIdentifier: "EditDisputationViewController") as! EditDisputationViewController
         editView.disputation = disputations[indexPath.row]
         editView.edit = true
-        // editView.loadView()
         self.present(editView, animated: true, completion: nil)
     }
     
