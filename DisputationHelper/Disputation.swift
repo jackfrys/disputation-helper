@@ -57,4 +57,14 @@ class Disputation {
         }
         return r
     }
+    
+    func question(index: Int) -> Question {
+        return questions[index]
+    }
+    
+    var questionCount: Int {
+        get {
+            return questions.count
+        }
+    }
 }

@@ -35,4 +35,13 @@ class EditDisputationViewController : UIViewController {
         opponent.text = disputation.opponent
         defendant.text = disputation.defendant
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination
+        if let v = vc as? QuestionViewController {
+            v.disputation = disputation
+        } else {
+            assert(false) // not implemented
+        }
+    }
 }

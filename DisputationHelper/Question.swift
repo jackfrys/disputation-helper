@@ -9,11 +9,11 @@
 import Foundation
 
 class Question {
-    let text : String
-    let trueAdoxScore : Int
-    let falseAdoxScore : Int
-    let trueAdoxReason : String
-    let falseAdoxReason : String
+    var text : String
+    var trueAdoxScore : Int
+    var falseAdoxScore : Int
+    var trueAdoxReason : String
+    var falseAdoxReason : String
     
     init(text: String, trueAdoxScore: Int, falseAdoxScore: Int, trueAdoxReason: String, falseAdoxReason: String) {
         self.text = text

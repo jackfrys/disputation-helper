@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7va-X9-bTg" id="8vD-Ro-5df">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -175,7 +175,7 @@
                                         <rect key="frame" x="0.0" y="28" width="383" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KFb-Jy-ZO9" id="Ys4-Pw-fuv">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -184,6 +184,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="questionTable" destination="i8m-Ir-z9v" id="oo4-0Y-Uxd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="564-95-olh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,7 +231,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jpr-pR-f6G" id="MzH-JG-Ijb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -245,7 +248,7 @@
         <!--Edit Question View Controller-->
         <scene sceneID="C29-J3-QEc">
             <objects>
-                <viewController id="2Fb-3Q-2TK" customClass="EditQuestionViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditQuestionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Fb-3Q-2TK" customClass="EditQuestionViewController" customModule="DisputationHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="00U-s6-key"/>
                         <viewControllerLayoutGuide type="bottom" id="SGV-WO-KZG"/>
@@ -313,6 +316,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="falseAdoxReason" destination="fjq-w4-nSg" id="UMQ-vw-SSR"/>
+                        <outlet property="falseAdoxReasonText" destination="rws-6P-aub" id="XbF-KJ-baU"/>
+                        <outlet property="navBar" destination="yXL-fx-eW5" id="aZE-7Y-rMn"/>
+                        <outlet property="questionText" destination="w4G-UU-gOL" id="jzo-K0-H43"/>
+                        <outlet property="trueAdoxRating" destination="naO-mY-RVh" id="jAv-rW-nvO"/>
+                        <outlet property="trueAdoxReasonText" destination="1P3-in-Lv1" id="n0c-Tp-Usz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbs-zh-Zt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -429,7 +440,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ZP-YE-VFS" id="ztb-Jg-J09">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
