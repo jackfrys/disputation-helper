@@ -18,10 +18,20 @@ class PlayContradictionViewController: UIViewController {
     
     @IBOutlet var reasonText: UITextView!
     
+    var appeared = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if appeared {
+            dismiss(animated: true, completion: nil)
+        } else {
+            appeared = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +44,6 @@ class PlayContradictionViewController: UIViewController {
         let editView = storyboard.instantiateViewController(withIdentifier: "StrikeQuestionViewController") as! StrikeQuestionViewController
         editView.disputation = disputation
         present(editView, animated: true, completion: nil)
-        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func declined(_ sender: Any) {
