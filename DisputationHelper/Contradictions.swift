@@ -28,6 +28,10 @@ class Contradictions {
             return contradictions.count
         }
     }
+    
+    func remove(contradiction: Contradiction) {
+        contradictions = contradictions.filter {$0 !== contradiction}
+    }
 }
 
 class Contradiction {
@@ -48,5 +52,9 @@ class Contradiction {
     
     func contains(answer: Answer) -> Bool {
         return first == answer || second == answer
+    }
+    
+    static func ==(lhs: Contradiction, rhs: Contradiction) -> Bool {
+        return lhs.first == rhs.first && lhs.second == rhs.second
     }
 }

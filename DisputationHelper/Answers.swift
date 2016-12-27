@@ -22,4 +22,14 @@ class Answers {
     func strike(answer: Answer) {
         answers = answers.filter {$0 != answer}
     }
+    
+    var count: Int {
+        get {
+            return answers.count
+        }
+    }
+    
+    func index(index: Int) -> Answer {
+        return answers[index]
+    }
 }

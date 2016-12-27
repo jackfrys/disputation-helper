@@ -40,8 +40,10 @@ class EditDisputationViewController : UIViewController {
         let vc = segue.destination
         if let v = vc as? QuestionViewController {
             v.disputation = disputation
+        } else if let v = vc as? ContradictionsViewController {
+            v.disputation = disputation
         } else {
-            let v = vc as! ContradictionsViewController
+            let v = vc as! PlayDisputationViewController
             v.disputation = disputation
         }
     }

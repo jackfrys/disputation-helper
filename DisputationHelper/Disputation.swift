@@ -77,4 +77,18 @@ class Disputation {
             return contradictions.count
         }
     }
+    
+    func remove(contradiction: Contradiction) {
+        contradictions.remove(contradiction: contradiction)
+    }
+    
+    var answerCount: Int {
+        get {
+            return answers.count
+        }
+    }
+    
+    func answer(index: Int) -> Answer {
+        return answers.index(index: index)
+    }
 }
