@@ -11,23 +11,48 @@ import SwiftyJSON
 
 class RemoteLoading {
     
-    let key: String
     var delegate: RemoteLoadingDelegate?
     
-    init(key: String) {
-        self.key = key
-    }
-    
-    func load() {
-        let url = URL(string: "\(self.key).jackfrysinger.com")!
+    func load(host: String, path: String) {
+        let url = URL(string: "\(host).jackfrysinger.com/\(path)")!
         let task = URLSession().dataTask(with: url, completionHandler: {(data, response, error) in self.handle(data: data)})
         task.resume()
     }
     
     func handle(data: Data?) {
-        // fun stuff
+        let json = JSON(data!)
+        let d = Disputation()
         
-        // feed back into the delegate
+        var questions = [Question]()
+        
+        for q in json["questions"].array! {
+            let text = q["text"].string!
+            let trueScore = q["trueScore"].int!
+            let falseScore = q["falseScore"].int!
+            let trueReason = q["trueReason"].string!
+            let falseReason = q["falseReason"].string!
+            
+            let new = Question(text: text, trueAdoxScore: trueScore, falseAdoxScore: falseScore, trueAdoxReason: trueReason, falseAdoxReason: falseReason)
+            questions.append(new)
+            d.addQuestion(question: new)
+        }
+        
+        for c in json["contradictions"].array! {
+            let q1 = c["questionOne"].int!
+            let q1a = c["questionOneAnswer"].bool!
+            let q2 = c["questionTwo"].int!
+            let q2a = c["questionTwoAnswer"].bool!
+            let reason = c["reason"].string!
+            
+            let new = Contradiction(firstQuestion: questions[q1], firstAnswer: q1a, secondQuestion: questions[q2], secondAnswer: q2a, reason: reason)
+            d.addContradiction(contradiction: new)
+        }
+        
+        d.defendant = json["defendant"].string!
+        d.opponent = json["opponent"].string!
+        d.thesis = json["thesis"].string!
+        
+        delegate?.recievedDisputation(disputation: d)
     }
 }
 
