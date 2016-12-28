@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, RemoteLoadingDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +54,33 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         disputations.append(newDisputation)
         vc.disputation = newDisputation
         vc.edit = false
+    }
+    
+    func recievedDisputation(disputation: Disputation) {
+        disputations.append(disputation)
+    }
+    
+    @IBAction func load(_ sender: Any) {
+        let alert = UIAlertController(title: "Enter information", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        var hostField: UITextField? = nil
+        alert.addTextField(configurationHandler: {(a) in
+            a.placeholder = "host"
+            hostField = a
+        })
+        var pathField: UITextField? = nil
+        alert.addTextField(configurationHandler: {(a) in
+            a.placeholder = "path"
+            pathField = a
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Go", style: UIAlertActionStyle.default, handler: {(action) in
+            let remote = RemoteLoading()
+            remote.delegate = self
+            let host = hostField!.text!
+            let path = pathField!.text!
+            remote.load(host: host, path: path)
+        }))
+        present(alert, animated: true, completion: nil)
     }
 }
 

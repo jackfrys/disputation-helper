@@ -26,6 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Disputation Manager" id="EDP-f1-wts">
+                                        <barButtonItem key="leftBarButtonItem" title="Load" id="FXK-zG-gWc">
+                                            <connections>
+                                                <action selector="load:" destination="BYZ-38-t0r" id="PCp-bf-rMu"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Add" id="4gz-Bj-WCk">
                                             <connections>
                                                 <segue destination="j2B-lu-xS9" kind="presentation" id="V2u-cJ-PB7"/>
@@ -43,7 +48,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7va-X9-bTg" id="8vD-Ro-5df">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
