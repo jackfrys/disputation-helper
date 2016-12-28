@@ -46,7 +46,10 @@ class PlayDisputationViewController: UIViewController {
             question = q
             questionText.text = q.text
         } else {
-            assert(false) // present adox
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let editView = storyboard.instantiateViewController(withIdentifier: "PlayAdoxViewController") as! PlayAdoxViewController
+            editView.disputation = disputation
+            present(editView, animated: true, completion: nil)
         }
     }
     

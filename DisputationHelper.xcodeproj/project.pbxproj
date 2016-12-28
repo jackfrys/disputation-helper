@@ -22,6 +22,7 @@
 		70342A0F1E120928006EF2B9 /* PlayDisputationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A0E1E120928006EF2B9 /* PlayDisputationViewController.swift */; };
 		70342A111E120FE6006EF2B9 /* PlayContradictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A101E120FE6006EF2B9 /* PlayContradictionViewController.swift */; };
 		70342A131E122179006EF2B9 /* StrikeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A121E122179006EF2B9 /* StrikeQuestionViewController.swift */; };
+		70342A151E134F50006EF2B9 /* PlayAdoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A141E134F50006EF2B9 /* PlayAdoxViewController.swift */; };
 		70892C921E08B8AF00510A18 /* ContradictionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70892C911E08B8AF00510A18 /* ContradictionsTests.swift */; };
 		70892C931E08B90C00510A18 /* Contradictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC31DFD11670062F101 /* Contradictions.swift */; };
 		70892C941E08C72000510A18 /* Disputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC51DFD26FC0062F101 /* Disputation.swift */; };
@@ -77,6 +78,7 @@
 		70342A0E1E120928006EF2B9 /* PlayDisputationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayDisputationViewController.swift; sourceTree = "<group>"; };
 		70342A101E120FE6006EF2B9 /* PlayContradictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayContradictionViewController.swift; sourceTree = "<group>"; };
 		70342A121E122179006EF2B9 /* StrikeQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrikeQuestionViewController.swift; sourceTree = "<group>"; };
+		70342A141E134F50006EF2B9 /* PlayAdoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAdoxViewController.swift; sourceTree = "<group>"; };
 		70892C911E08B8AF00510A18 /* ContradictionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContradictionsTests.swift; sourceTree = "<group>"; };
 		70892C951E08C73200510A18 /* DisputationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisputationTests.swift; sourceTree = "<group>"; };
 		709909831E012AE7000D04F6 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				7015431C1DF0240200F097F3 /* AppDelegate.swift */,
 				7015431E1DF0240200F097F3 /* MainViewController.swift */,
 				701543201DF0240200F097F3 /* Main.storyboard */,
+				70342A141E134F50006EF2B9 /* PlayAdoxViewController.swift */,
 				70342A121E122179006EF2B9 /* StrikeQuestionViewController.swift */,
 				70342A101E120FE6006EF2B9 /* PlayContradictionViewController.swift */,
 				70342A0E1E120928006EF2B9 /* PlayDisputationViewController.swift */,
@@ -334,6 +337,7 @@
 				70D5FDC61DFD26FC0062F101 /* Disputation.swift in Sources */,
 				70342A0D1E10BCEB006EF2B9 /* SelectQuestionViewController.swift in Sources */,
 				709909841E012AE7000D04F6 /* Answer.swift in Sources */,
+				70342A151E134F50006EF2B9 /* PlayAdoxViewController.swift in Sources */,
 				700B82951E10980500F0E8C7 /* ContradictionsViewController.swift in Sources */,
 				700B82991E10990700F0E8C7 /* EditContradictionViewController.swift in Sources */,
 				70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */,
