@@ -24,8 +24,6 @@
 		70342A131E122179006EF2B9 /* StrikeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A121E122179006EF2B9 /* StrikeQuestionViewController.swift */; };
 		70342A151E134F50006EF2B9 /* PlayAdoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A141E134F50006EF2B9 /* PlayAdoxViewController.swift */; };
 		70342A171E1358D7006EF2B9 /* RemoteLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A161E1358D7006EF2B9 /* RemoteLoading.swift */; };
-		70342A1B1E135D34006EF2B9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70342A191E135C9B006EF2B9 /* SwiftyJSON.framework */; };
-		70342A1C1E135D34006EF2B9 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70342A191E135C9B006EF2B9 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70892C921E08B8AF00510A18 /* ContradictionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70892C911E08B8AF00510A18 /* ContradictionsTests.swift */; };
 		70892C931E08B90C00510A18 /* Contradictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC31DFD11670062F101 /* Contradictions.swift */; };
 		70892C941E08C72000510A18 /* Disputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D5FDC51DFD26FC0062F101 /* Disputation.swift */; };
@@ -60,13 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		70342A1D1E135D34006EF2B9 /* Embed Frameworks */ = {
+		70342A211E135DF1006EF2B9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				70342A1C1E135D34006EF2B9 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70342A1B1E135D34006EF2B9 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +228,8 @@
 				701543151DF0240200F097F3 /* Sources */,
 				701543161DF0240200F097F3 /* Frameworks */,
 				701543171DF0240200F097F3 /* Resources */,
-				70342A1D1E135D34006EF2B9 /* Embed Frameworks */,
+				70342A211E135DF1006EF2B9 /* Embed Frameworks */,
+				70342A221E135E17006EF2B9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -354,6 +351,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70342A221E135E17006EF2B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJson.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		701543151DF0240200F097F3 /* Sources */ = {
@@ -541,6 +555,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DisputationHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,6 +573,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DisputationHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
