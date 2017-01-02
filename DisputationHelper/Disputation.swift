@@ -26,7 +26,7 @@ class Disputation {
     }
     
     func nextQuestion() -> Question? {
-        return questions.remove(at: Int(arc4random()) % questions.count)
+        return questions.count > 0 ? questions.remove(at: Int(arc4random()) % questions.count) : nil
     }
     
     func submitAnswer(question: Question, answer: Bool) {
