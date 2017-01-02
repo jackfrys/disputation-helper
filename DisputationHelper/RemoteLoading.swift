@@ -38,9 +38,9 @@ class RemoteLoading {
         }
         
         for c in json["contradictions"].array! {
-            let q1 = c["questionOne"].int!
+            let q1 = c["questionOne"].int! - 1
             let q1a = c["questionOneAnswer"].bool!
-            let q2 = c["questionTwo"].int!
+            let q2 = c["questionTwo"].int! - 1
             let q2a = c["questionTwoAnswer"].bool!
             let reason = c["reason"].string!
             

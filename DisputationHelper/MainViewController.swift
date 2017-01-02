@@ -58,6 +58,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func recievedDisputation(disputation: Disputation) {
         disputations.append(disputation)
+        table.reloadData()
     }
     
     @IBAction func load(_ sender: Any) {
