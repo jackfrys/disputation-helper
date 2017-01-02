@@ -62,23 +62,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func load(_ sender: Any) {
         let alert = UIAlertController(title: "Enter information", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-        var hostField: UITextField? = nil
+        var urlField: UITextField? = nil
         alert.addTextField(configurationHandler: {(a) in
-            a.placeholder = "host"
-            hostField = a
-        })
-        var pathField: UITextField? = nil
-        alert.addTextField(configurationHandler: {(a) in
-            a.placeholder = "path"
-            pathField = a
+            a.placeholder = "URL"
+            urlField = a
         })
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Go", style: UIAlertActionStyle.default, handler: {(action) in
             let remote = RemoteLoading()
             remote.delegate = self
-            let host = hostField!.text!
-            let path = pathField!.text!
-            remote.load(host: host, path: path)
+            let loc = urlField!.text!
+            remote.load(loc: loc)
         }))
         present(alert, animated: true, completion: nil)
     }
