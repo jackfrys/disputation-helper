@@ -26,7 +26,7 @@ class Disputation {
     }
     
     func nextQuestion() -> Question? {
-        return questions.popLast()
+        return questions.remove(at: Int(arc4random()) % questions.count)
     }
     
     func submitAnswer(question: Question, answer: Bool) {
@@ -47,6 +47,7 @@ class Disputation {
     
     func strike(answer: Answer) {
         answers.strike(answer: answer)
+        addQuestion(question: answer.question)
     }
     
     func topAdox(number: Int) -> [Answer] {
