@@ -14,7 +14,9 @@ class RemoteLoading {
     var delegate: RemoteLoadingDelegate?
     
     func load(loc: String) {
-        let url = URL(string: loc)!
+        var components = URLComponents(string: "https://idxbg9vzf0.execute-api.us-east-1.amazonaws.com/prod/disputator/")!
+        components.queryItems = [URLQueryItem(name: "disputation_id", value: loc)]
+        let url = components.url!
         let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in self.handle(data: data)})
         task.resume()
     }
