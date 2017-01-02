@@ -58,7 +58,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func recievedDisputation(disputation: Disputation) {
         disputations.append(disputation)
-        table.reloadData()
+        table.performSelector(onMainThread: #selector(table.reloadData), with: nil, waitUntilDone: false)
     }
     
     @IBAction func load(_ sender: Any) {
