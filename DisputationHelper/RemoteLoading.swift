@@ -15,7 +15,7 @@ class RemoteLoading {
     
     func load(host: String, path: String) {
         let url = URL(string: "\(host).jackfrysinger.com/\(path)")!
-        let task = URLSession().dataTask(with: url, completionHandler: {(data, response, error) in self.handle(data: data)})
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in self.handle(data: data)})
         task.resume()
     }
     
