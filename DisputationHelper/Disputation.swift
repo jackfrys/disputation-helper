@@ -92,4 +92,9 @@ class Disputation {
     func answer(index: Int) -> Answer {
         return answers.index(index: index)
     }
+    
+    func removeQuestion(index: Int) {
+        let q = questions.remove(at: index)
+        contradictions.remove(question: q)
+    }
 }

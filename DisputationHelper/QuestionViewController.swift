@@ -57,4 +57,15 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewWillAppear(animated)
         questionTable.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            disputation.removeQuestion(index: indexPath.row)
+            questionTable.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        }
+    }
 }
