@@ -13,6 +13,7 @@ class PlayDisputationViewController: UIViewController {
     @IBOutlet var navBar: UINavigationBar!
     var disputation: Disputation!
     var question: Question?
+    var qNum = 1
 
     @IBOutlet var questionText: UITextView!
 
@@ -45,6 +46,8 @@ class PlayDisputationViewController: UIViewController {
         } else if let q = disputation.nextQuestion() {
             question = q
             questionText.text = q.text
+            navBar.items?[0].title = "Question \(qNum)"
+            qNum += 1
         } else {
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let editView = storyboard.instantiateViewController(withIdentifier: "PlayAdoxViewController") as! PlayAdoxViewController
