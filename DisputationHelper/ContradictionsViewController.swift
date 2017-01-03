@@ -57,5 +57,15 @@ class ContradictionsViewController: UIViewController, UITableViewDataSource, UIT
         editView.edit = true
         self.present(editView, animated: true, completion: nil)
     }
-
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            disputation.remove(contradiction: disputation.contradiction(index: indexPath.row))
+            contradictionTable.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        }
+    }
 }
