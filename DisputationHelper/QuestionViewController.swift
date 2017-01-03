@@ -15,6 +15,7 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
     var disputation: Disputation!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         questionTable.delegate = self
         questionTable.dataSource = self
     }
@@ -53,6 +54,7 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         questionTable.reloadData()
     }
 }

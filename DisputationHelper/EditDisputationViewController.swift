@@ -30,6 +30,7 @@ class EditDisputationViewController : UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navBar.items?[0].title = edit ? "Edit Disputation" : "Add Disputation"
         thesis.text = disputation.thesis
         opponent.text = disputation.opponent

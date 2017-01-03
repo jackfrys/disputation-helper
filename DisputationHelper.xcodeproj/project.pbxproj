@@ -18,6 +18,7 @@
 		701543241DF0240200F097F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701543231DF0240200F097F3 /* Assets.xcassets */; };
 		701543271DF0240200F097F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701543251DF0240200F097F3 /* LaunchScreen.storyboard */; };
 		7015433D1DF0240200F097F3 /* DisputationHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */; };
+		7023E6301E1B515900286267 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704F34AE1E1B4A5600AC4F34 /* SwiftyJSON.framework */; };
 		70342A0D1E10BCEB006EF2B9 /* SelectQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A0C1E10BCEB006EF2B9 /* SelectQuestionViewController.swift */; };
 		70342A0F1E120928006EF2B9 /* PlayDisputationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A0E1E120928006EF2B9 /* PlayDisputationViewController.swift */; };
 		70342A111E120FE6006EF2B9 /* PlayContradictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A101E120FE6006EF2B9 /* PlayContradictionViewController.swift */; };
@@ -58,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		70342A211E135DF1006EF2B9 /* Embed Frameworks */ = {
+		7023E62F1E1B507E00286267 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -94,7 +95,7 @@
 		70342A121E122179006EF2B9 /* StrikeQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrikeQuestionViewController.swift; sourceTree = "<group>"; };
 		70342A141E134F50006EF2B9 /* PlayAdoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAdoxViewController.swift; sourceTree = "<group>"; };
 		70342A161E1358D7006EF2B9 /* RemoteLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLoading.swift; sourceTree = "<group>"; };
-		70342A191E135C9B006EF2B9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		704F34AE1E1B4A5600AC4F34 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		70892C911E08B8AF00510A18 /* ContradictionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContradictionsTests.swift; sourceTree = "<group>"; };
 		70892C951E08C73200510A18 /* DisputationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisputationTests.swift; sourceTree = "<group>"; };
 		709909831E012AE7000D04F6 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7023E6301E1B515900286267 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +202,7 @@
 		70342A181E135C9A006EF2B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70342A191E135C9B006EF2B9 /* SwiftyJSON.framework */,
+				704F34AE1E1B4A5600AC4F34 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,8 +230,8 @@
 				701543151DF0240200F097F3 /* Sources */,
 				701543161DF0240200F097F3 /* Frameworks */,
 				701543171DF0240200F097F3 /* Resources */,
-				70342A211E135DF1006EF2B9 /* Embed Frameworks */,
 				70342A221E135E17006EF2B9 /* ShellScript */,
+				7023E62F1E1B507E00286267 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,7 +361,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJson.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
@@ -553,10 +555,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q6ETBD25S7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DisputationHelper/Info.plist;
@@ -564,6 +566,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackfrysinger.DisputationHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -573,10 +577,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Q6ETBD25S7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DisputationHelper/Info.plist;
@@ -584,6 +588,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackfrysinger.DisputationHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

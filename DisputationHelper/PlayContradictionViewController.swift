@@ -20,23 +20,13 @@ class PlayContradictionViewController: UIViewController {
     
     var appeared = false
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         if appeared {
             dismiss(animated: true, completion: nil)
         } else {
             appeared = true
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func accepted(_ sender: Any) {
@@ -52,6 +42,7 @@ class PlayContradictionViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         questionOneText.text = contradiction.first.question.text
         questionTwoText.text = contradiction.second.question.text
         reasonText.text = contradiction.reason

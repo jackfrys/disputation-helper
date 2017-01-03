@@ -27,11 +27,6 @@ class EditContradictionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func backButton(_ sender: Any) {
         contradiction?.first.answer = questionOneState.isOn
         contradiction?.second.answer = questionTwoState.isOn
@@ -73,6 +68,7 @@ class EditContradictionViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         questionOneLabel.text = contradiction?.first.question.text
         questionOneState.isOn = (contradiction?.first.answer)!
         

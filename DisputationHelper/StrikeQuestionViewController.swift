@@ -22,11 +22,6 @@ class StrikeQuestionViewController: UIViewController, UITableViewDelegate, UITab
         disputation.strike(answer: disputation.answer(index: indexPath.row))
         dismiss(animated: true, completion: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let c = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
@@ -38,12 +33,10 @@ class StrikeQuestionViewController: UIViewController, UITableViewDelegate, UITab
         return 1
     }
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        questionTable.reloadData()
         questionTable.dataSource = self
         questionTable.delegate = self
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        questionTable.reloadData()
     }
 }

@@ -9,15 +9,12 @@
 import UIKit
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, RemoteLoadingDelegate {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        table.delegate = self
-        table.dataSource = self
-    }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         table.reloadData()
+        table.delegate = self
+        table.dataSource = self
     }
 
     var disputations = [Disputation]()

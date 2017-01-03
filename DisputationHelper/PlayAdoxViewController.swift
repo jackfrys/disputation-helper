@@ -21,6 +21,7 @@ class PlayAdoxViewController: UIViewController {
     @IBOutlet var questionThreeReason: UITextView!
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let a = disputation.topAdox(number: 3)
         questionOneLabel.text = a[0].question.text
         questionOneReason.text = a[0].adoxReason()

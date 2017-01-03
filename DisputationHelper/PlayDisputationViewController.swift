@@ -17,11 +17,6 @@ class PlayDisputationViewController: UIViewController {
 
     @IBOutlet var questionText: UITextView!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -57,6 +52,7 @@ class PlayDisputationViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         reloadUI()
     }
 }

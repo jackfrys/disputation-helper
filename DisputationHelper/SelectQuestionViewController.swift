@@ -45,11 +45,13 @@ class SelectQuestionViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         questionTable.dataSource = self
         questionTable.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         questionTable.reloadData()
     }
 }

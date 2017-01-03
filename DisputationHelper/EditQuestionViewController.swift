@@ -21,13 +21,8 @@ class EditQuestionViewController: UIViewController {
     @IBOutlet var trueAdoxReasonText: UITextView!
     @IBOutlet var questionText: UITextView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navBar.items?[0].title = edit ? "Edit Question" : "Add Question"
         if let n = number {
             let q = disputation.question(index: n)
@@ -37,11 +32,6 @@ class EditQuestionViewController: UIViewController {
             falseAdoxReasonText.text = q.falseAdoxReason
             questionText.text = q.text
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func backButton(_ sender: Any) {
