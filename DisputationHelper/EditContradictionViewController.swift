@@ -10,8 +10,9 @@ import UIKit
 
 class EditContradictionViewController: UIViewController {
 
-    @IBOutlet var questionTwoLabel: UILabel!
-    @IBOutlet var questionOneLabel: UILabel!
+    
+    @IBOutlet var q1: UIButton!
+    @IBOutlet var q2: UIButton!
     
     @IBOutlet var reasonText: UITextView!
     
@@ -69,10 +70,10 @@ class EditContradictionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        questionOneLabel.text = contradiction?.first.question.text
+        q1.setTitle(contradiction?.first.question.text, for: UIControlState.normal)
         questionOneState.isOn = (contradiction?.first.answer)!
         
-        questionTwoLabel.text = contradiction?.second.question.text
+        q2.setTitle(contradiction?.second.question.text, for: UIControlState.normal)
         questionTwoState.isOn = (contradiction?.second.answer)!
         
         reasonText.text = contradiction?.reason
