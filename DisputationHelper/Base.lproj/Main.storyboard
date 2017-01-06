@@ -119,18 +119,12 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Opponent" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTC-4z-OnW">
                                                 <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="86" id="fZZ-ZZ-h2u"/>
-                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="vs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-hx-hAW">
                                                 <rect key="frame" x="107.5" y="0.0" width="108" height="20.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="22" id="37s-n4-PUw"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -177,18 +171,12 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="sRG-i0-EBI" secondAttribute="trailing" constant="20" symbolic="YES" id="2DO-xK-eYJ"/>
                                     <constraint firstItem="1W7-bi-jld" firstAttribute="leading" secondItem="avy-t9-rA0" secondAttribute="leading" id="8PW-dL-dZg"/>
-                                    <constraint firstItem="1W7-bi-jld" firstAttribute="top" secondItem="cEF-Wr-bbr" secondAttribute="bottom" constant="8" symbolic="YES" id="Bff-yF-Raa"/>
-                                    <constraint firstItem="cEF-Wr-bbr" firstAttribute="top" secondItem="kor-ac-gRf" secondAttribute="bottom" constant="8" symbolic="YES" id="C3C-tE-SLN"/>
                                     <constraint firstItem="sRG-i0-EBI" firstAttribute="centerX" secondItem="1AI-ui-QIV" secondAttribute="centerX" id="L9c-Rc-eWK"/>
                                     <constraint firstItem="kor-ac-gRf" firstAttribute="leading" secondItem="avy-t9-rA0" secondAttribute="leading" id="Qol-2v-OMv"/>
                                     <constraint firstItem="1W7-bi-jld" firstAttribute="centerX" secondItem="1AI-ui-QIV" secondAttribute="centerX" id="RXi-gu-Quz"/>
-                                    <constraint firstItem="kor-ac-gRf" firstAttribute="top" secondItem="sRG-i0-EBI" secondAttribute="bottom" constant="8" symbolic="YES" id="ShG-qW-iSG"/>
                                     <constraint firstItem="cEF-Wr-bbr" firstAttribute="leading" secondItem="avy-t9-rA0" secondAttribute="leading" id="W5J-ZS-L1J"/>
-                                    <constraint firstItem="1AI-ui-QIV" firstAttribute="top" secondItem="cmx-g1-dYG" secondAttribute="bottom" constant="8" symbolic="YES" id="ZOZ-PK-MKs"/>
                                     <constraint firstItem="kor-ac-gRf" firstAttribute="centerX" secondItem="1AI-ui-QIV" secondAttribute="centerX" id="cfe-7Q-nnf"/>
-                                    <constraint firstItem="sRG-i0-EBI" firstAttribute="top" secondItem="1AI-ui-QIV" secondAttribute="bottom" constant="8" symbolic="YES" id="ggX-Bh-CcH"/>
                                     <constraint firstItem="sRG-i0-EBI" firstAttribute="leading" secondItem="avy-t9-rA0" secondAttribute="leading" id="gtf-7R-XyE"/>
-                                    <constraint firstItem="sRG-i0-EBI" firstAttribute="leading" secondItem="avy-t9-rA0" secondAttribute="leading" constant="20" symbolic="YES" id="s7S-1W-zwQ"/>
                                     <constraint firstItem="cEF-Wr-bbr" firstAttribute="centerX" secondItem="1AI-ui-QIV" secondAttribute="centerX" id="tZS-8H-Ki2"/>
                                     <constraint firstItem="1AI-ui-QIV" firstAttribute="leading" secondItem="avy-t9-rA0" secondAttribute="leading" id="zbn-lm-jch"/>
                                 </constraints>
