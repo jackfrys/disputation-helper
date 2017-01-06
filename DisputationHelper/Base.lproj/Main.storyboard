@@ -590,74 +590,75 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How can you attack a yes answer?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1P3-in-Lv1">
-                                <rect key="frame" x="16" y="239" width="343" height="59"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BHe-UR-Wea">
+                                <rect key="frame" x="16" y="83" width="355" height="278"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Type question here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-UU-gOL">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="59"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="Rwc-Gf-INd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Yes Adox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j73-bh-5Pi">
+                                        <rect key="frame" x="0.0" y="59" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="naO-mY-RVh">
+                                        <rect key="frame" x="-2" y="79.5" width="359" height="31"/>
+                                    </slider>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="How can you attack a yes answer?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1P3-in-Lv1">
+                                        <rect key="frame" x="0.0" y="109.5" width="355" height="59"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="yF4-iB-FQc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="No Adox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A57-FJ-u0H">
+                                        <rect key="frame" x="0.0" y="168.5" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fjq-w4-nSg">
+                                        <rect key="frame" x="-2" y="189" width="359" height="31"/>
+                                    </slider>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="How can you attack a no answer?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rws-6P-aub">
+                                        <rect key="frame" x="0.0" y="219" width="355" height="59"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="yF4-iB-FQc"/>
+                                    <constraint firstItem="naO-mY-RVh" firstAttribute="trailing" secondItem="w4G-UU-gOL" secondAttribute="trailing" id="1P0-NR-DZc"/>
+                                    <constraint firstItem="j73-bh-5Pi" firstAttribute="trailing" secondItem="w4G-UU-gOL" secondAttribute="trailing" id="CQF-Ls-0ys"/>
+                                    <constraint firstItem="A57-FJ-u0H" firstAttribute="trailing" secondItem="w4G-UU-gOL" secondAttribute="trailing" id="CRp-Rd-zc7"/>
+                                    <constraint firstItem="1P3-in-Lv1" firstAttribute="trailing" secondItem="w4G-UU-gOL" secondAttribute="trailing" id="CaX-8Z-7D6"/>
+                                    <constraint firstItem="fjq-w4-nSg" firstAttribute="trailing" secondItem="w4G-UU-gOL" secondAttribute="trailing" id="IId-Wc-5Ys"/>
+                                    <constraint firstItem="naO-mY-RVh" firstAttribute="leading" secondItem="w4G-UU-gOL" secondAttribute="leading" id="JTM-dt-S19"/>
+                                    <constraint firstItem="rws-6P-aub" firstAttribute="leading" secondItem="w4G-UU-gOL" secondAttribute="leading" id="PEr-vh-Klv"/>
+                                    <constraint firstItem="1P3-in-Lv1" firstAttribute="leading" secondItem="w4G-UU-gOL" secondAttribute="leading" id="QXq-J1-DKB"/>
+                                    <constraint firstItem="rws-6P-aub" firstAttribute="trailing" secondItem="w4G-UU-gOL" secondAttribute="trailing" id="aed-YF-amE"/>
+                                    <constraint firstItem="fjq-w4-nSg" firstAttribute="leading" secondItem="w4G-UU-gOL" secondAttribute="leading" id="hKy-8F-rDE"/>
+                                    <constraint firstItem="j73-bh-5Pi" firstAttribute="leading" secondItem="w4G-UU-gOL" secondAttribute="leading" id="uJK-UG-aPT"/>
+                                    <constraint firstItem="A57-FJ-u0H" firstAttribute="leading" secondItem="w4G-UU-gOL" secondAttribute="leading" id="wt3-Nk-wIw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes Adox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j73-bh-5Pi">
-                                <rect key="frame" x="16" y="172" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="naO-mY-RVh">
-                                <rect key="frame" x="14" y="201" width="347" height="31"/>
-                            </slider>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How can you attack a no answer?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rws-6P-aub">
-                                <rect key="frame" x="16" y="391" width="343" height="59"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Adox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A57-FJ-u0H">
-                                <rect key="frame" x="16" y="324" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fjq-w4-nSg">
-                                <rect key="frame" x="14" y="354" width="347" height="31"/>
-                            </slider>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type question here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-UU-gOL">
-                                <rect key="frame" x="16" y="83" width="343" height="59"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="Rwc-Gf-INd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SGV-WO-KZG" firstAttribute="top" secondItem="rws-6P-aub" secondAttribute="bottom" constant="217" id="0s1-8Q-YU1"/>
-                            <constraint firstItem="w4G-UU-gOL" firstAttribute="centerX" secondItem="yXL-fx-eW5" secondAttribute="centerX" id="3Fj-C4-Wls"/>
-                            <constraint firstItem="w4G-UU-gOL" firstAttribute="leading" secondItem="UaW-qB-deo" secondAttribute="leadingMargin" id="8hB-GN-t3F"/>
-                            <constraint firstItem="fjq-w4-nSg" firstAttribute="top" secondItem="A57-FJ-u0H" secondAttribute="bottom" constant="9" id="Drp-Nn-bNj"/>
-                            <constraint firstItem="1P3-in-Lv1" firstAttribute="leading" secondItem="A57-FJ-u0H" secondAttribute="leading" id="FCt-o0-N7D"/>
-                            <constraint firstItem="naO-mY-RVh" firstAttribute="trailing" secondItem="1P3-in-Lv1" secondAttribute="trailing" id="KK0-6V-a6E"/>
                             <constraint firstItem="yXL-fx-eW5" firstAttribute="leading" secondItem="UaW-qB-deo" secondAttribute="leading" id="LEx-9s-nBZ"/>
-                            <constraint firstItem="1P3-in-Lv1" firstAttribute="top" secondItem="naO-mY-RVh" secondAttribute="bottom" constant="8" symbolic="YES" id="LaO-gt-FM1"/>
-                            <constraint firstItem="w4G-UU-gOL" firstAttribute="top" secondItem="yXL-fx-eW5" secondAttribute="bottom" constant="19" id="MLP-Nu-U8h"/>
                             <constraint firstItem="yXL-fx-eW5" firstAttribute="top" secondItem="00U-s6-key" secondAttribute="bottom" id="Oph-l5-VVX"/>
-                            <constraint firstItem="j73-bh-5Pi" firstAttribute="top" secondItem="w4G-UU-gOL" secondAttribute="bottom" constant="30" id="VVa-6C-mcb"/>
-                            <constraint firstItem="w4G-UU-gOL" firstAttribute="leading" secondItem="j73-bh-5Pi" secondAttribute="leading" id="W10-1q-qkk"/>
-                            <constraint firstItem="naO-mY-RVh" firstAttribute="leading" secondItem="1P3-in-Lv1" secondAttribute="leading" id="aOP-TC-Z1O"/>
-                            <constraint firstItem="j73-bh-5Pi" firstAttribute="leading" secondItem="naO-mY-RVh" secondAttribute="leading" id="dye-fY-zag"/>
-                            <constraint firstItem="w4G-UU-gOL" firstAttribute="trailing" secondItem="naO-mY-RVh" secondAttribute="trailing" id="hub-uw-xvI"/>
+                            <constraint firstItem="BHe-UR-Wea" firstAttribute="leading" secondItem="UaW-qB-deo" secondAttribute="leading" constant="20" symbolic="YES" id="REE-p9-06v"/>
                             <constraint firstAttribute="trailing" secondItem="yXL-fx-eW5" secondAttribute="trailing" id="iFd-nj-6BH"/>
-                            <constraint firstItem="naO-mY-RVh" firstAttribute="top" secondItem="j73-bh-5Pi" secondAttribute="bottom" constant="8" symbolic="YES" id="idp-SM-a5L"/>
-                            <constraint firstItem="rws-6P-aub" firstAttribute="top" secondItem="fjq-w4-nSg" secondAttribute="bottom" constant="7" id="khX-jy-U0q"/>
-                            <constraint firstItem="fjq-w4-nSg" firstAttribute="leading" secondItem="rws-6P-aub" secondAttribute="leading" id="mcu-q8-P7D"/>
-                            <constraint firstItem="1P3-in-Lv1" firstAttribute="trailing" secondItem="fjq-w4-nSg" secondAttribute="trailing" id="vIr-bx-u0V"/>
-                            <constraint firstItem="fjq-w4-nSg" firstAttribute="trailing" secondItem="rws-6P-aub" secondAttribute="trailing" id="vYq-Cd-DHP"/>
-                            <constraint firstItem="A57-FJ-u0H" firstAttribute="top" secondItem="1P3-in-Lv1" secondAttribute="bottom" constant="26" id="vhG-zD-Rgb"/>
-                            <constraint firstItem="A57-FJ-u0H" firstAttribute="leading" secondItem="fjq-w4-nSg" secondAttribute="leading" id="zio-hs-SBq"/>
+                            <constraint firstAttribute="trailing" secondItem="BHe-UR-Wea" secondAttribute="trailing" id="p51-Za-CeX"/>
                         </constraints>
                     </view>
                     <connections>
