@@ -19,6 +19,7 @@
 		701543271DF0240200F097F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701543251DF0240200F097F3 /* LaunchScreen.storyboard */; };
 		7015433D1DF0240200F097F3 /* DisputationHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */; };
 		7023E6301E1B515900286267 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704F34AE1E1B4A5600AC4F34 /* SwiftyJSON.framework */; };
+		7023E6341E1F6BA400286267 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023E6331E1F6BA400286267 /* Keyboard.swift */; };
 		70342A0D1E10BCEB006EF2B9 /* SelectQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A0C1E10BCEB006EF2B9 /* SelectQuestionViewController.swift */; };
 		70342A0F1E120928006EF2B9 /* PlayDisputationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A0E1E120928006EF2B9 /* PlayDisputationViewController.swift */; };
 		70342A111E120FE6006EF2B9 /* PlayContradictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342A101E120FE6006EF2B9 /* PlayContradictionViewController.swift */; };
@@ -89,6 +90,7 @@
 		701543381DF0240200F097F3 /* DisputationHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisputationHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015433C1DF0240200F097F3 /* DisputationHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisputationHelperUITests.swift; sourceTree = "<group>"; };
 		7015433E1DF0240200F097F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7023E6331E1F6BA400286267 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = ../Keyboard.swift; sourceTree = "<group>"; };
 		70342A0C1E10BCEB006EF2B9 /* SelectQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectQuestionViewController.swift; sourceTree = "<group>"; };
 		70342A0E1E120928006EF2B9 /* PlayDisputationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayDisputationViewController.swift; sourceTree = "<group>"; };
 		70342A101E120FE6006EF2B9 /* PlayContradictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayContradictionViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				700B82921E1097F700F0E8C7 /* QuestionViewController.swift */,
 				700B82941E10980500F0E8C7 /* ContradictionsViewController.swift */,
 				700B82901E0A2BB000F0E8C7 /* EditDisputationViewController.swift */,
+				7023E6331E1F6BA400286267 /* Keyboard.swift */,
 				701543231DF0240200F097F3 /* Assets.xcassets */,
 				701543251DF0240200F097F3 /* LaunchScreen.storyboard */,
 				701543281DF0240200F097F3 /* Info.plist */,
@@ -385,6 +388,7 @@
 				70342A0D1E10BCEB006EF2B9 /* SelectQuestionViewController.swift in Sources */,
 				709909841E012AE7000D04F6 /* Answer.swift in Sources */,
 				70342A151E134F50006EF2B9 /* PlayAdoxViewController.swift in Sources */,
+				7023E6341E1F6BA400286267 /* Keyboard.swift in Sources */,
 				700B82951E10980500F0E8C7 /* ContradictionsViewController.swift in Sources */,
 				700B82991E10990700F0E8C7 /* EditContradictionViewController.swift in Sources */,
 				70D5FDC41DFD11670062F101 /* Contradictions.swift in Sources */,

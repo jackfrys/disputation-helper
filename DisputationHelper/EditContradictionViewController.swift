@@ -25,6 +25,7 @@ class EditContradictionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         _ = cont()
+        hideKeyboard()
         // Do any additional setup after loading the view.
     }
 

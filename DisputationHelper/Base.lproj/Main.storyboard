@@ -99,41 +99,41 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="avy-t9-rA0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="avy-t9-rA0">
                                 <rect key="frame" x="16" y="66" width="343" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmx-g1-dYG">
-                                        <rect key="frame" x="0.0" y="0.0" width="5" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="4.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Ignorance is not bliss." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1AI-ui-QIV">
-                                        <rect key="frame" x="0.0" y="21" width="323" height="59"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ignorance is not bliss." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1AI-ui-QIV">
+                                        <rect key="frame" x="0.0" y="20.5" width="323" height="59"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="sRG-i0-EBI">
-                                        <rect key="frame" x="0.0" y="80" width="323" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="sRG-i0-EBI">
+                                        <rect key="frame" x="0.0" y="79.5" width="323" height="30.5"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Opponent" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTC-4z-OnW">
-                                                <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Opponent" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTC-4z-OnW">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="vs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-hx-hAW">
-                                                <rect key="frame" x="108" y="0.0" width="108" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vs." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-hx-hAW">
+                                                <rect key="frame" x="107.5" y="0.0" width="108" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VeL-CT-0fZ">
-                                                <rect key="frame" x="216" y="0.0" width="107" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeL-CT-0fZ">
+                                                <rect key="frame" x="215.5" y="0.0" width="107.5" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Defendant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-IK-ftd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Defendant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-IK-ftd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -146,21 +146,21 @@
                                             <constraint firstItem="VeL-CT-0fZ" firstAttribute="width" secondItem="sTC-4z-OnW" secondAttribute="width" id="nKZ-a8-gbA"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kor-ac-gRf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kor-ac-gRf">
                                         <rect key="frame" x="0.0" y="110" width="323" height="30"/>
                                         <state key="normal" title="View Contradictions"/>
                                         <connections>
                                             <segue destination="OHT-yq-eHl" kind="show" id="Gag-em-s27"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEF-Wr-bbr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEF-Wr-bbr">
                                         <rect key="frame" x="0.0" y="140" width="323" height="30"/>
                                         <state key="normal" title="View Questions"/>
                                         <connections>
                                             <segue destination="wm3-bb-KG8" kind="show" id="HNb-G6-5lN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W7-bi-jld">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W7-bi-jld">
                                         <rect key="frame" x="0.0" y="170" width="323" height="30"/>
                                         <state key="normal" title="Play Disputation"/>
                                         <connections>
@@ -185,6 +185,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="avy-t9-rA0" secondAttribute="trailing" id="4t6-86-9fS"/>
+                            <constraint firstItem="Y2p-Lt-RlX" firstAttribute="top" secondItem="avy-t9-rA0" secondAttribute="bottom" constant="401" id="XVw-r2-brJ"/>
                             <constraint firstItem="Qne-8c-INB" firstAttribute="top" secondItem="lvx-lp-oEv" secondAttribute="bottom" id="Zny-tY-s2y"/>
                             <constraint firstAttribute="trailing" secondItem="Qne-8c-INB" secondAttribute="trailing" id="beJ-FO-9JZ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="avy-t9-rA0" secondAttribute="leading" id="fOx-5G-w7T"/>
@@ -746,11 +747,17 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8OQ-Dj-djZ">
                                         <rect key="frame" x="0.0" y="183.5" width="346" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="8OQ-Dj-djZ" firstAttribute="top" secondItem="dD6-y5-JzY" secondAttribute="bottom" id="9hX-Yw-Oia"/>
+                                    <constraint firstItem="8OQ-Dj-djZ" firstAttribute="leading" secondItem="4ai-B3-cJ3" secondAttribute="leading" id="QiR-Vx-8G2"/>
+                                    <constraint firstAttribute="bottom" secondItem="8OQ-Dj-djZ" secondAttribute="bottom" id="Ta2-6C-D9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="8OQ-Dj-djZ" secondAttribute="trailing" id="t9Z-FC-a4b"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

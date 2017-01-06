@@ -48,4 +48,9 @@ class EditDisputationViewController : UIViewController {
             v.disputation = disputation
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hideKeyboard()
+    }
 }
