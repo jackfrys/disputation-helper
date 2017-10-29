@@ -16,7 +16,7 @@ class Answers {
     }
     
     func sortedAdox() -> [Answer] {
-        return answers.sorted {$0.0.adoxScore() > $0.1.adoxScore()}
+        return answers.sorted {$0.adoxScore() > $1.adoxScore()}
     }
     
     func strike(answer: Answer) {
