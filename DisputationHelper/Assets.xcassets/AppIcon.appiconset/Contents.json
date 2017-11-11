@@ -101,6 +101,12 @@
       "idiom" : "ipad",
       "filename" : "dh_icon.001 copy 2-resized.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "dh_icon.001 copy 2-resized-resized.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
